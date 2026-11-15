@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "us-mail-extraction-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor for Python projects"
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+
+[project.scripts]
+us-mail-extraction-claim-audit = "us_mail_extraction_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["us_mail_extraction_claim_audit*", "tests"]
